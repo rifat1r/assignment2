@@ -1,4 +1,4 @@
-body header,
+header,
 main {
   margin: 0 135px;
 }
@@ -192,10 +192,12 @@ footer h3 {
   color: #131318;
   margin-top: 100px;
 }
+
 /* for mobile devices */
 @media screen and (max-width: 600px) {
-  body {
-    margin: 0 1000px;
+  body header,
+  main {
+    margin: 0;
   }
   .banner {
     height: auto;
