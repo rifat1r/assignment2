@@ -1,4 +1,5 @@
-body {
+body header,
+main {
   margin: 0 135px;
 }
 /* shared style */
@@ -131,17 +132,23 @@ p {
   align-items: center;
 }
 .b {
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .bo {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  align-items: center;
 }
+
 .box-1 {
   border-radius: 16px;
   border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
   width: 50%;
+  height: 284px;
+
   text-align: left;
 }
 
@@ -150,6 +157,8 @@ p {
   border: 1px solid rgba(41, 206, 246, 0.2);
   background: rgba(41, 206, 246, 0.05);
   width: 50%;
+  height: 284px;
+
   text-align: left;
 }
 .box-3 {
@@ -157,14 +166,36 @@ p {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
   width: 50%;
+  height: 284px;
   text-align: left;
   margin-top: 0;
 }
-
+.choose-section h3,
+p {
+  text-align: center;
+}
+/* footer style */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 100px 250px;
+}
+footer h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.cr {
+  color: #131318;
+  margin-top: 100px;
+}
 /* for mobile devices */
 @media screen and (max-width: 600px) {
   body {
-    margin: 0;
+    margin: 0 1000px;
   }
   .banner {
     height: auto;
@@ -193,5 +224,9 @@ p {
   }
   .tours li {
     margin-bottom: 2px;
+  }
+  .b {
+    display: flex;
+    justify-content: center;
   }
 }
