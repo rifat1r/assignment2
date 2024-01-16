@@ -124,6 +124,42 @@ p {
 .destination p {
   color: rgba(19, 19, 24, 0.7);
 }
+/* box */
+.box div {
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+}
+.b {
+  align-items: center;
+}
+.bo {
+  display: flex;
+  flex-direction: row;
+}
+.box-1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  width: 50%;
+  text-align: left;
+}
+
+.box-2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  width: 50%;
+  text-align: left;
+}
+.box-3 {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  width: 50%;
+  text-align: left;
+  margin-top: 0;
+}
 
 /* for mobile devices */
 @media screen and (max-width: 600px) {
@@ -138,7 +174,9 @@ p {
   .tours-section,
   .row-1,
   .row-2,
-  .row-3 {
+  .row-3,
+  .box,
+  .bo {
     flex-direction: column;
   }
   .where-go input {
