@@ -1,0 +1,89 @@
+body {
+  margin: 0 135px;
+}
+/* shared style */
+.primary-color {
+  color: #ff5400;
+}
+/* nav styles */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+}
+nav h3 {
+  display: flex;
+  align-items: center;
+}
+/* banner style */
+.banner {
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1170px;
+  height: 500px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-position: center center;
+  color: #fff;
+  padding-top: 100px;
+  border-radius: 10px;
+}
+.banner h2 {
+  font-weight: 800;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.banner p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.where-go input {
+  width: 174px;
+  height: 52px;
+  padding: 16px 32px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+}
+.where-go button {
+  background-color: #ff5400;
+  border: none;
+  width: 174px;
+  height: 52px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  color: #fff;
+}
+.where-go {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* for mobile devices */
+@media screen and (max-width: 600px) {
+  .banner {
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .where-go {
+    flex-direction: column;
+  }
+}
