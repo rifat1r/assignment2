@@ -6,6 +6,13 @@ main {
 .primary-color {
   color: #ff5400;
 }
+.primary-btn {
+  background-color: #ff5400;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  padding: 10px 80px 10px 10px;
+}
 /* nav styles */
 header nav {
   display: flex;
@@ -50,25 +57,25 @@ nav h3 {
   font-weight: 400;
   font-size: 1rem;
 }
-.where-go input {
-  width: 174px;
-  height: 30px;
-  padding: 16px 32px;
-  margin-right: 10px;
+
+.where-go input,
+.where-go select,
+.where-go button {
+  width: 10vw;
+  height: 50px;
   border-radius: 8px;
-  background: #fff;
   border: none;
+
+  margin: 5px;
+  color: rgba(19, 19, 24, 0.5);
 }
-.primary-btn {
-  background-color: #ff5400;
-  border: none;
-  width: 174px;
-  height: 62px;
-  padding: 16px 32px;
-  border-radius: 8px;
+
+.where-go button {
   color: #fff;
 }
 .where-go {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -95,10 +102,13 @@ nav h3 {
 .tours li {
   margin-bottom: 40px;
 }
+.tours button {
+  margin-top: 50px;
+}
+
 /* destination styles */
 .destination-img {
   width: 100%;
-  box-sizing: border-box;
 }
 .row-1,
 .row-2,
@@ -180,11 +190,6 @@ p {
   justify-content: space-between;
   width: 100%;
 }
-.news-letter > .news-img,
-.news-letter > .newsl {
-  align-items: center;
-  width: 100%;
-}
 
 .newsletter-section .newl {
   display: flex;
@@ -197,7 +202,7 @@ p {
   color: #fff;
   border: none;
   border-radius: 10px;
-  transform: translateX(400px) translateY(-150px) rotate(-20deg);
+  transform: translateX(25vw) translateY(-150px) rotate(-20deg);
 }
 .news-img img {
   display: flex;
@@ -258,11 +263,13 @@ footer h3 {
   body header,
   main {
     margin: 0;
+    padding: 0;
   }
   .banner {
     height: auto;
     margin-bottom: 30px;
   }
+
   .where-go,
   .tours-section,
   .row-1,
@@ -274,6 +281,14 @@ footer h3 {
   }
   .where-go input {
     margin-bottom: 10px;
+  }
+  .where-go {
+    width: 80%;
+  }
+  .where-go input,
+  .where-go select,
+  .where-go button {
+    width: 95%;
   }
   .tours-section,
   .banner {
@@ -293,5 +308,27 @@ footer h3 {
   }
   footer {
     padding: 20px 10px;
+  }
+  .newsletter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .newsl {
+    width: 100%;
+  }
+  .newsl > input {
+    width: 90%;
+  }
+  .news-img img {
+    width: 100%;
+  }
+  header nav {
+    display: inline;
+    align-items: center;
+  }
+  nav li {
+    margin-right: 4px;
   }
 }
