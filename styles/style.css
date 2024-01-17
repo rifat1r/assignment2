@@ -2,6 +2,9 @@ header,
 main {
   margin: 0 135px;
 }
+body {
+  font-family: "Mulish", sans-serif;
+}
 /* shared style */
 .primary-color {
   color: #ff5400;
